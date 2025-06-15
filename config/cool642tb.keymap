@@ -26,10 +26,10 @@
 
         Num {
             bindings = <
-&kp N1           &kp NUMBER_9  &kp NUMBER_8  &kp N7        &kp MINUS                                       &kp N6          &kp N7        &kp N8                &kp N9                 &kp N0
-&kp EXCLAMATION  &kp NUMBER_6  &kp NUMBER_5  &kp NUMBER_4  &kp NUMBER_0  &kp PAGE_UP    &kp INT_MUHENKAN   &kp AMPERSAND   &kp SQT       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ENTER
-&kp PLUS         &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp EQUAL     &kp PAGE_DOWN  &kp RIGHT_BRACKET  &kp TILDE       &kp QUESTION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp QUESTION
-&bt BT_PRV       &bt BT_NXT    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none          &kp MINUS          &bt BT_CLR_ALL                                                             &kp LEFT_SHIFT
+&kp RIGHT_BRACKET  &kp NUMBER_9  &kp NUMBER_8  &kp N7        &kp MINUS                     &none           &kp F7  &kp F8  &kp F9  &kp F10
+&kp LEFT_BRACKET   &kp NUMBER_6  &kp NUMBER_5  &kp NUMBER_4  &kp NUMBER_0  &trans  &trans  &kp LANGUAGE_2  &kp F4  &kp F5  &kp F6  &kp F11
+&kp BACKSLASH      &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp EQUAL     &trans  &trans  &kp LANG1       &kp F1  &kp F2  &kp F3  &kp F12
+&none              &none         &none         &trans        &trans        &trans  &trans  &trans                                  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
