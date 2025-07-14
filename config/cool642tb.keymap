@@ -15,10 +15,10 @@
 
         default_layer {
             bindings = <
-&kp V          &kp W      &kp M      &kp P         &kp Y                                              &kp F  &kp G      &kp C  &kp R      &kp L
-&kp A          &kp O      &kp E      &kp U         &kp I                 &none          &kp UP_ARROW  &kp D  &kp H      &kp T  &kp N      &kp S
-&kp SEMICOLON  &kp Q      &kp J      &kp K         &kp X                 &kp PAGE_DOWN  &kp DOWN      &kp B  &mkp LCLK  &mo 5  &mkp RCLK  &kp Z
-&mo 3          &kp GRAVE  &kp SLASH  &kp LEFT_ALT  &mt LEFT_SHIFT SPACE  &mt LCTRL TAB  &mo 2         &mo 1                               &kp LEFT_WIN
+&kp V          &kp W      &kp M      &kp P                &kp Y                                           &kp F  &kp G      &kp C  &kp R      &kp L
+&kp A          &kp O      &kp E      &kp U                &kp I                 &none          &mkp MCLK  &kp D  &kp H      &kp T  &kp N      &kp S
+&kp SEMICOLON  &kp Q      &kp J      &kp K                &kp X                 &kp BACKSPACE  &kp ENTER  &kp B  &mkp LCLK  &mo 5  &mkp RCLK  &kp Z
+&mo 3          &kp GRAVE  &kp SLASH  &mt LEFT_ALT ESCAPE  &mt LEFT_SHIFT SPACE  &mt LCTRL TAB  &mo 2      &mo 1                               &kp LEFT_WIN
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -37,10 +37,10 @@
 
         Sub {
             bindings = <
-&none   &kp TAB           &kp SPACE  &none       &none                   &none     &none       &kp SPACE  &kp TAB           &none
-&none   &none             &none      &none       &none   &trans  &trans  &mkp MB4  &none       &none      &none             &none
-&none   &kp SINGLE_QUOTE  &kp COMMA  &kp PERIOD  &none   &trans  &trans  &none     &kp PERIOD  &kp COMMA  &kp SINGLE_QUOTE  &none
-&trans  &none             &none      &trans      &trans  &trans  &trans  &trans                                             &trans
+&kp APOS  &kp COMMA  &kp PERIOD  &none   &none                   &none     &none  &kp SPACE   &kp TAB  &none
+&none     &none      &none       &none   &none   &trans  &trans  &mkp MB4  &none  &kp DELETE  &kp INS  &none
+&none     &none      &none       &none   &none   &trans  &trans  &none     &none  &none       &none    &none
+&trans    &none      &none       &trans  &trans  &trans  &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -70,10 +70,10 @@
 
         SCROLL {
             bindings = <
-&none  &none  &none  &none   &none                        &none     &none           &none  &none          &none
-&none  &none  &none  &none   &none   &trans       &trans  &kp HOME  &kp LEFT_ARROW  &none  &kp RIGHT      &kp END
-&none  &none  &none  &none   &none   &kp PAGE_UP  &trans  &kp DEL   &kp ENTER       &none  &kp BACKSPACE  &kp ESCAPE
-&none  &none  &none  &trans  &trans  &trans       &trans  &trans                                          &trans
+&none  &none  &none  &none   &none                   &none           &none           &none  &none         &none
+&none  &none  &none  &none   &none   &trans  &trans  &kp HOME        &kp PAGE_DOWN   &none  &kp PAGE_UP   &kp END
+&none  &none  &none  &none   &none   &none   &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &none  &kp UP_ARROW  &kp RIGHT
+&none  &none  &none  &trans  &trans  &trans  &trans  &trans                                               &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
