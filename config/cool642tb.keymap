@@ -18,40 +18,35 @@
         compatible = "zmk,combos";
 
         comb1 {
-            bindings = <&kp TAB>;
-            key-positions = <11 10>;
+            bindings = <&kp ENTER>;
+            key-positions = <18 19>;
         };
 
         comb2 {
-            bindings = <&kp LS(ESCAPE)>;
-            key-positions = <0 1>;
+            bindings = <&kp BACKSPACE>;
+            key-positions = <19 20>;
         };
 
         comb3 {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <22 23>;
+            bindings = <&kp ESC>;
+            key-positions = <18 20>;
         };
 
         comb4 {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <9 8>;
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <6 7>;
         };
 
         comb5 {
-            bindings = <&bt BT_CLR_ALL>;
-            key-positions = <9 8>;
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <8 7>;
             timeout-ms = <0>;
             layers = <2>;
         };
 
         MS_BTN1_ {
-            bindings = <&mkp MB1>;
-            key-positions = <38 39>;
-        };
-
-        MS_BTN2_ {
-            bindings = <&mkp MB2>;
-            key-positions = <38 37>;
+            bindings = <&mkp MB4>;
+            key-positions = <6 8>;
         };
     };
 
@@ -138,22 +133,20 @@
 
         NUM {
             bindings = <
-&kp N1           &kp NUMBER_9  &kp NUMBER_8  &kp NUMBER_7  &kp MINUS                     &kp N6          &kp F7  &kp F8  &kp F9  &kp F10
-&kp EXCLAMATION  &kp NUMBER_6  &kp NUMBER_5  &kp NUMBER_4  &kp NUMBER_0  &none   &none   &kp LANGUAGE_1  &kp F4  &kp F5  &kp F6  &kp F11
-&kp PLUS         &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp EQUAL     &none   &none   &kp LANGUAGE_2  &kp F1  &kp F2  &kp F3  &kp F12
-&none            &none         &none         &trans        &trans        &trans  &trans  &trans                                  &trans
+&kp RIGHT_BRACKET  &kp NUMBER_9  &kp NUMBER_8  &kp NUMBER_7  &kp MINUS                     &none           &kp F7  &kp F8  &kp F9  &kp F10
+&kp LEFT_BRACKET   &kp NUMBER_6  &kp NUMBER_5  &kp NUMBER_4  &kp NUMBER_0  &none   &none   &kp LANGUAGE_1  &kp F4  &kp F5  &kp F6  &kp F11
+&kp BACKSLASH      &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp EQUAL     &none   &none   &kp LANGUAGE_2  &kp F1  &kp F2  &kp F3  &kp F12
+&none              &none         &none         &trans        &trans        &trans  &trans  &trans                                  &trans
             >;
         };
 
         FUNC {
             bindings = <
-&kp F1        &kp F2        &kp F3             &kp F4         &kp F5                                                  &kp F6          &kp F7          &kp F8          &kp F9           &kp F10
-&kp AT_SIGN   &kp SQT       &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON     &mo 1           &kp INT_KATAKANAHIRAGANA  &kp LEFT        &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT        &kp ENTER
-&kp Z         &kp X         &kp C              &kp V          &kp B         &kp LEFT_BRACE  &kp RIGHT_BRACE           &kp LC(SPACE)   &kp RG(SPACE)   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp SLASH
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &kp RGUI       &kp LEFT_ALT  &kp UNDERSCORE  &none                     &bt BT_CLR_ALL                                                   &kp LEFT_SHIFT
+&kp SQT        &kp COMMA  &kp PERIOD  &none   &none                   &none     &none    &kp SPACE   &kp TAB        &none
+&kp SEMICOLON  &kp GRAVE  &kp SLASH   &none   &none   &none   &none   &mkp MB4  &kp ESC  &kp ENTER   &kp BACKSPACE  &none
+&none          &none      &none       &none   &none   &none   &none   &none     &none    &kp DELETE  &kp INSERT     &none
+&none          &none      &none       &trans  &trans  &trans  &trans  &trans                                        &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         ARROW {
@@ -180,10 +173,10 @@
 
         SCROLL {
             bindings = <
-&kp Q       &kp W      &kp E     &kp R     &kp T                        &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A       &kp S      &kp D     &kp F     &kp G        &kp N1  &kp N2  &kp H        &kp J  &kp K      &kp L       &kp ENTER
-&kp Z       &kp X      &kp C     &kp V     &kp B        &kp N3  &kp N4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE  &kp N5  &kp N6  &lt 2 SPACE                                &kp BSPC
+&bootloader  &none         &none         &none         &none                       &none           &none  &none  &none  &bootloader
+&none        &none         &none         &bt BT_SEL 4  &bt BT_SEL 0  &none  &none  &bt BT_CLR_ALL  &none  &none  &none  &none
+&none        &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &none         &none  &none  &bt BT_CLR      &none  &none  &none  &none
+&none        &none         &none         &none         &none         &none  &none  &none                                &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
